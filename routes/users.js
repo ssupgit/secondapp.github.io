@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const bcrypt = require("bcryptjs");
+const bcryptjs = require("bcryptjs");
 const passport = require("passport")
 
 const{forwardAuth}=require('../config/auth');
