@@ -4,7 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var http = require('http').Server(app);
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 
 const passport = require('passport');
 
