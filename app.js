@@ -5,6 +5,10 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var http = require('http').Server(app);
 const bcryptjs = require('bcryptjs');
+const dotenv = require ('dotenv');
+
+dotenv.config();
+
 
 const passport = require('passport');
 

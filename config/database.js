@@ -1,11 +1,13 @@
+
 //setup connection mongodb
 
 const mongoose = require('mongoose');
+const dotenv = require ('dotenv');
 
-const mongoDB = "mongodb+srv://FirstApp:Firstapp20213@firstapp.fo8pu.mongodb.net/MyFirstDatabase?retryWrites=true&w=majority";
+dotenv.config();
 
-mongoose.connect(mongoDB,{useNewUrlParser:true}
-).then(() => console.log('Mongodb Connected'));
+mongoose.connect('process.env.DB_CONNECT',{useNewUrlParser:true},
+    () => console.log('Mongodb Connected'));
 
 mongoose.Promise = global.Promise;
 
